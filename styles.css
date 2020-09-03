@@ -148,3 +148,27 @@ body {
   align-items: center;
   margin-top: 2em;
 }
+
+
+
+
+/* loading image */
+.loading-image{
+  object-fit: cover;
+  border-radius: 50px;
+  display: none;
+}
+
+.loading-image.show { 
+  display: block;
+}
+
+
+.loading-container {
+  margin-top: 2em;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
