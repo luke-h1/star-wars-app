@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* RESET */
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  height: 100vh;
+}
+
+/* Navigation Bar */
+.navbar-i-wrapper {
+  margin: 10px 0px 0px 10px;
+  background: linear-gradient(90deg, #2193b0, #6dd5ed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar-i-wrapper i:focus,
+.navbar-i-wrapper i:hover {
+  background: linear-gradient(90deg, #ff0099, #493240);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  outline: 0;
+}
+
+.navigation {
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+}
+
+/* form */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5em;
+  width: 400px;
+}
+
+.form-control {
+  width: 100%;
+  text-align: center;
+}
+
+.form-control--label {
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.form-control--input {
+  color: #000;
+  padding: 15px;
+  border-radius: 30px;
+  width: 60%;
+  font-size: 16px;
+}
+.form-control--input:active,
+.form-control--input:focus {
+  outline: 0;
+}
+
+.form-control--button {
+  font-size: 15px;
+  color: #fff;
+  background-color: #203a43;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.wrapper {
+  padding: 30px;
+  width: 400px;
+  height: 400px;
+  margin: 50px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  text-align: center;
+  align-items: center;
+}
+
+.wrapper-img-thumbnail {
+  width: 100%;
+  object-fit: cover;
+  background-blend-mode: overlay;
+  margin: 0 auto;
+  margin-bottom: 1em; 
+}
+
+.wrapper-title {
+  text-align: center;
+  font-weight: 700;
+}
+
+.wrapper-films {
+  list-style-type: none;
+  letter-spacing: 1.6;
+}
+
+.wrapper-vehicles {
+  list-style-type: none;
+  letter-spacing: 1.6;
+}
