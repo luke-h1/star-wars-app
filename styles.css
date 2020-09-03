@@ -41,7 +41,7 @@ body {
   text-align: center;
 }
 
-/* form */
+/* form start*/
 .form-container {
   display: flex;
   flex-direction: column;
@@ -81,7 +81,9 @@ body {
   padding: 10px;
   border-radius: 10px;
 }
+/* form end*/
 
+/* output styles start */
 .wrapper {
   padding: 30px;
   width: 400px;
@@ -99,7 +101,7 @@ body {
   object-fit: cover;
   background-blend-mode: overlay;
   margin: 0 auto;
-  margin-bottom: 1em; 
+  margin-bottom: 1em;
 }
 
 .wrapper-title {
@@ -115,4 +117,34 @@ body {
 .wrapper-vehicles {
   list-style-type: none;
   letter-spacing: 1.6;
+}
+/* output styles end */
+
+/* error div styles */
+.error {
+  color: red;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.error.show {
+  /* add this dynamically within the errorDiv function */
+  color: red;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.error.hide {
+  display: none; /* add this dynamically within the errorDiv function */
+}
+
+/* where the output goes from the dyanmic html inserted with ks */
+.outputDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
 }
