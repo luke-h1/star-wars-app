@@ -22,7 +22,7 @@
     </div>
     </div>
     <div class="form-container">
-      <form class="form-control">
+      <form class="form-control" id="form-control">
         <label for="character" class="form-control--label"
           >Enter Star Wars Characters here</label
         >
@@ -30,12 +30,14 @@
           type="text"
           for="character"
           class="form-control--input"
+          id="form-control--input"
           required
           placeholder="Character"
         /> 
         <button class="form-control--button">Go !</button>
       </form>
     </div>
+    <div class="error" id="error"></div>
     <div class="wrapper">
       <img src="img-test.jpeg" class="wrapper-img-thumbnail" alt="a star wars character" />
       <h4 class="wrapper-title">star wars character here</h4>
@@ -54,6 +56,7 @@
         <li>crew</li>
       </ul>
     </div>
+    <div class="output-flex"></div>
 
     <script src="app.js"></script>
   </body>

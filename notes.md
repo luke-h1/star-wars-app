@@ -61,3 +61,13 @@ make into ul
 ```
 
 
+
+
+## ROUTES + PARAMS API: 
+
+CHARACTER ROUTE: 
+````
+https://swapi.dev/api/people/?search=CHARACTER-HERE
+
+
+````
