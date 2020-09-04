@@ -18,7 +18,11 @@
 	"gender": "male",
 
 
-
+films: Array(4)
+0: "http://swapi.dev/api/films/1/"
+1: "http://swapi.dev/api/films/2/"
+2: "http://swapi.dev/api/films/3/"
+3: "http://swapi.dev/api/films/6/"
 
 	"homeworld": "http://swapi.dev/api/planets/1/", // returns obj with stats such as population etc 
 
