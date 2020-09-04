@@ -5,8 +5,8 @@ const errorDiv = document.getElementById('error');
 const loadingGif = document.getElementById('loading');
 const API_URL = `https://swapi.dev/api/people/?search=`;
 const FILM_URL = `https://swapi.dev/api/films?title=`;
-const userFilmInput = document.getElementById('form-control--film-input');
-const filmForm = document.getElementById('form-control--film');
+const filmBtn = document.getElementById('filmBtn');
+const grid = document.getElementById('grid');
 
 async function getData(e) {
   e.preventDefault();
@@ -27,17 +27,13 @@ async function getData(e) {
 
 async function getFilmData(e) {
   e.preventDefault();
-  const queryValue = userFilmInput.value;
-  if (queryValue === '') {
-    showError('Please enter a correct character');
-  } else {
-    const MOVIE_URL = `${FILM_URL}${queryValue}`;
-    const res = await fetch(`${MOVIE_URL}`);
-    const data = await res.json();
-    hideLoading();
-    showFilmData(data);
-    console.log(data);
-  }
+  showLoading();
+  const MOVIE_URL = `${FILM_URL}`;
+  const res = await fetch(`${MOVIE_URL}`);
+  const data = await res.json();
+  hideLoading();
+  showFilmData(data);
+  console.log(data);
 }
 
 // show loading gif
@@ -61,7 +57,7 @@ function showError(message) {
 function showFilmData(data) {
   let output = '';
   data.results.forEach((film) => {
-    output += `
+    output += ` 
     <div class="wrapper">
       <h4 class="wrapper-title">${film.title}</h4>
       <ul class="wrapper-films">
@@ -72,7 +68,7 @@ function showFilmData(data) {
     </div>
     `;
   });
-  outputDiv.innerHTML = output;
+  grid.innerHTML = output;
 }
 
 // show data in DOM
@@ -96,10 +92,6 @@ function showData(data) {
         <li>crew</li>
       </ul>
     </div>
-    
-    
-    
-    
     `;
   });
   outputDiv.innerHTML = output;
@@ -107,4 +99,4 @@ function showData(data) {
 
 // EVENT LISTENERS
 form.addEventListener('submit', getData);
-filmForm.addEventListener('submit', getFilmData);
+filmBtn.addEventListener('click', getFilmData);
