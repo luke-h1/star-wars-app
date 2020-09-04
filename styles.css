@@ -81,6 +81,16 @@ body {
   padding: 10px;
   border-radius: 10px;
 }
+
+.form-control--film { 
+  margin-top: 1em;
+  text-align:center ;
+}
+
+.film-label { 
+  font-weight: 700;
+}
+
 /* form end*/
 
 /* output styles start */
@@ -171,4 +181,10 @@ body {
   flex-direction: column;
   justify-items: center;
   align-items: center;
+}
+
+
+.grid {    
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
