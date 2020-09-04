@@ -3,8 +3,8 @@ const userInput = document.getElementById('form-control--input');
 const outputDiv = document.getElementById('output-flex');
 const errorDiv = document.getElementById('error');
 const loadingGif = document.getElementById('loading');
-const API_URL = `https://swapi.dev/api/people/?search=`;
-const FILM_URL = `https://swapi.dev/api/films?title=`;
+const API_URL = `https://cors-anywhere.herokuapp.com/https://swapi.dev/api/people/?search=`;
+const FILM_URL = `https://cors-anywhere.herokuapp.com/https://swapi.dev/api/films?title=`;
 const filmBtn = document.getElementById('filmBtn');
 const grid = document.getElementById('grid');
 
@@ -68,6 +68,7 @@ function showFilmData(data) {
     </div>
     `;
   });
+  outputDiv.innerHTML = '';
   grid.innerHTML = output;
 }
 
@@ -85,15 +86,11 @@ function showData(data) {
       </ul>
       <br />
       <hr />
-      <ul class="wrapper-vehicles">
-        <li>name of Vehicle character uses</li>
-        <li>specific model name</li>
-        <li>Price of vehicle</li>
-        <li>crew</li>
       </ul>
     </div>
     `;
   });
+  grid.innerHTML = '';
   outputDiv.innerHTML = output;
 }
 
