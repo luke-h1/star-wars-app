@@ -3,8 +3,8 @@ const userInput = document.getElementById('form-control--input');
 const outputDiv = document.getElementById('output-flex');
 const errorDiv = document.getElementById('error');
 const loadingGif = document.getElementById('loading');
-const API_URL = `https://swapi.dev/api/people/?search=`;
-const FILM_URL = `https://swapi.dev/api/films?title=`;
+const API_URL = `https://cors-anywhere.herokuapp.com/https://swapi.dev/api/people/?search=`;
+const FILM_URL = `https://cors-anywhere.herokuapp.com/https://swapi.dev/api/films?title=`;
 const filmBtn = document.getElementById('filmBtn');
 const grid = document.getElementById('grid');
 
