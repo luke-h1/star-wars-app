@@ -68,6 +68,7 @@ function showFilmData(data) {
     </div>
     `;
   });
+  outputDiv.innerHTML = '';
   grid.innerHTML = output;
 }
 
@@ -85,15 +86,11 @@ function showData(data) {
       </ul>
       <br />
       <hr />
-      <ul class="wrapper-vehicles">
-        <li>name of Vehicle character uses</li>
-        <li>specific model name</li>
-        <li>Price of vehicle</li>
-        <li>crew</li>
       </ul>
     </div>
     `;
   });
+  grid.innerHTML = '';
   outputDiv.innerHTML = output;
 }
 
