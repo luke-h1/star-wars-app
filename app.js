@@ -64,7 +64,7 @@ function showFilmData(data) {
       </ul>
       <br />
       <hr />
-        <p>${film.opening_crawl}</p> 
+        <p class="open-crawl">${film.opening_crawl}</p> 
     </div>
     `;
   });
